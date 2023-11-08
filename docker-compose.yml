@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  twilio-token-generator:
+    container_name: TwilioTokenGenerator
+    build: .
+    command: pnpm start
+    ports:
+      - 8589:3000
