@@ -40,7 +40,7 @@ export async function POST(request: Request) {
   }
 
   const currentTime: number = Math.floor(new Date().getTime() / 1000);
-  const expirateTime: number = currentTime + 3600;
+  const expirateTime: number = currentTime + 3600 * 24; // token will be valid for 24 hours
 
   const payload = {
     jti: `${apiKey}-${currentTime}`,
