@@ -38,7 +38,7 @@ export const Input = ({ saveToken }: InputInterface) => {
           className="block w-full rounded-2xl border 
                 border-slate-300 bg-transparent p-4 text-base/6 text-neutral-950 
                 ring-4 ring-transparent transition placeholder:text-neutral-500 
-                focus:border-slate-400 focus:outline-none focus:ring-slate-400/5"
+                focus:border-slate-400 focus:outline-none focus:ring-slate-400/5 dark:text-white"
           placeholder="Identity"
           aria-label="Twilio Identity"
           onChange={(event: ChangeEvent<HTMLInputElement>) =>
@@ -52,7 +52,7 @@ export const Input = ({ saveToken }: InputInterface) => {
           className="block w-full rounded-2xl border 
                 border-slate-300 bg-transparent p-4 text-base/6 text-neutral-950 
                 ring-4 ring-transparent transition placeholder:text-neutral-500 
-                focus:border-slate-400 focus:outline-none focus:ring-slate-400/5"
+                focus:border-slate-400 focus:outline-none focus:ring-slate-400/5 dark:text-white"
           placeholder="APP ID"
           aria-label="Twilio App Id"
           onChange={(event: ChangeEvent<HTMLInputElement>) =>
@@ -66,7 +66,7 @@ export const Input = ({ saveToken }: InputInterface) => {
           className="block w-full rounded-2xl border 
                 border-slate-300 bg-transparent p-4 text-base/6 text-neutral-950 
                 ring-4 ring-transparent transition placeholder:text-neutral-500 
-                focus:border-slate-400 focus:outline-none focus:ring-slate-400/5"
+                focus:border-slate-400 focus:outline-none focus:ring-slate-400/5 dark:text-white"
           placeholder="Push Credential"
           aria-label="Twilio Push Credential"
           onChange={(event: ChangeEvent<HTMLInputElement>) =>
