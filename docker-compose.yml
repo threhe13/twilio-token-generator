@@ -2,8 +2,11 @@ version: "3"
 
 services:
   twilio-token-generator:
-    container_name: TwilioTokenGenerator
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: twilio-token:dev
+    container_name: dev
     command: pnpm start
     ports:
       - 8589:3000
