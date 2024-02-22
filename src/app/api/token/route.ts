@@ -66,5 +66,7 @@ export async function POST(request: Request) {
     header,
   });
 
-  return new NextResponse(JSON.stringify(responseBody), { status: 200 });
+  return new NextResponse(JSON.stringify({ callToken: responseBody }), {
+    status: 200,
+  });
 }

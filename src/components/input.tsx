@@ -22,7 +22,7 @@ export const Input = ({ saveToken }: InputInterface) => {
     })
       .then(async (res) => {
         const responseBody = await res.json();
-        saveToken(responseBody);
+        saveToken(responseBody.callToken);
       })
       .catch((err) => {
         console.log(err.message);
